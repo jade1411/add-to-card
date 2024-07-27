@@ -1,0 +1,41 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+        <a >
+            <img style="width: 264px;margin-top: 5px;height: 147px;" src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""> 
+            <h6>Все товары</h6>
+        </a>
+</div>
+        <div class="item">
+            <a >
+                <img style="width: 264px;margin-top: 5px;height: 147px;" src="https://images.unsplash.com/photo-1583573636246-18cb2246697f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1938&q=80" alt=""> 
+                <h6>Смартфоны</h6>
+            </a>
+</div>
+        <div class="item">
+            <a >
+                <img style="width: 264px;margin-top: 5px;height: 147px;" src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt=""> 
+                <h6>Ноутбуки</h6>
+            </a>
+</div>
+<div class="item">
+    <a >
+        <img style="width: 264px;margin-top: 5px;height: 147px;" src="https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80" alt=""> 
+        <h6>Наушники</h6>
+    </a>
+</div>
+</div>
+</div> 
+     <div class="container">
+        <div class="row">
+            <ng-container *ngFor="let item of productList">
+                <div class="card col-md-3">
+                    <img src="{{item.image}}" alt="">
+                    <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                    <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                    <p><strong>Цена:</strong>${{item.price}}</p>
+                    <button class="btn btn-primary">Добавить в корзину</button>
+                </div>
+            </ng-container>
+     </div>
+    </div>   
